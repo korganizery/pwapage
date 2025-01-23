@@ -4,10 +4,10 @@ self.addEventListener("install", (event) => {
       .open("v1")
       .then((cache) => {
         const urlsToCache = [
-          "./",
-          "./icon-192x192.png",
-          "./icon-512x512.png",
-          "./manifest.json",
+          "/",
+          "/icon-192x192.png",
+          "/icon-512x512.png",
+          "/manifest.json",
         ];
         return cache.addAll(urlsToCache);
       })
@@ -16,3 +16,5 @@ self.addEventListener("install", (event) => {
       }),
   );
 });
+
+
